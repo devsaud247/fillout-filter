@@ -1,0 +1,36 @@
+{
+  "name": "fillout-form",
+  "version": "1.0.0",
+  "description": "A basic filter API backend for fillout form",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config --loader ts-node/esm index.ts dotenv_config_path=./.env.local",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect-brk -r dotenv/config --loader ts-node/esm index.ts dotenv_config_path=./.env.local"
+  },
+  "readme": "README.md",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "node-fetch": "^3.3.2"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "20.11.x"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
